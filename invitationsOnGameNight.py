@@ -88,8 +88,7 @@ print(f'Most would like to play on {game_night}')
 print(f'And they are {attending_game_night}')
 
 
-
-
+#Choosing a second night for unable to attend players
 unable_to_attend_best_night = [gamer for gamer in gamers if gamer['name'] not in attending_game_night]
 second_night_availability = build_daily_frequency_table()
 calculate_availability(unable_to_attend_best_night, second_night_availability)
